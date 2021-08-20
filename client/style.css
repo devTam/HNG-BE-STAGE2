@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Lato', sans-serif
+  }
+
+.container {
+    min-height: 100vh;
+    display: flex;
+}
+
+.gray {
+    background-color: #2d2d2d;
+    width: 30%;
+    /* min-height: 100%; */
+}
+
+.img-box {
+    height: 25vh;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-box img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    border: 2px solid #fff;
+
+}
+
+.name-box {
+    height: 25vh;
+    padding: 1em;
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #2d2d2d;
+}
+
+.name {
+    letter-spacing: 2px;
+    font-size: 2.5em;
+
+}
+
+.title {
+    letter-spacing: 5px;
+}
+
+
+.info-box, .social-box, .ref-box {
+    margin-bottom: 1.5em;
+}
+
+
+.subheading-gray {
+    color: #fff;
+    padding: 1em;
+    padding-left: 0;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #fff;
+    border-radius: 2px;
+    letter-spacing: 2px;
+}
+
+.content-box {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+}
+
+.content-box i {
+    color: #fff;
+    font-size: 2em;
+}
+
+.content {
+    margin-left: 1em;
+
+}
+
+.content-heading {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.content-text {
+    font-style: italic;
+    color: #999;
+}
+
+.white {
+    width: 70%;
+}
+
+.content-w {
+    padding: 1em
+}
+
+.subheading-w {
+    color: #2d2d2d;
+    padding: 1em;
+    padding-left: 0;
+    padding-top: 0;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #2d2d2d;
+    letter-spacing: 2px;
+}
+
+.content-heading-w {
+    color: #2d2d2d;
+}
+
+.content-box-w {
+    align-items: flex-start;
+}
+
+.content-sub {
+    font-style: italic;
+    margin-bottom: .5em;
+}
+
+.content-desc {
+    font-size: .8em;
+    padding-left: 1em;
+    list-style-type: circle;
+}
+
+.skills {
+    padding: 1em;
+    font-size: .8em;
+}
+
+.skills ul {
+    padding-left: 1em;
+    list-style-type: circle;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    flex-wrap: wrap;
+}
+
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logos a {
+    margin-left: 1em;
+}
+
+.footer img {
+    display: block;
+    height: 30px;
+}
+
+.dynamic {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#response {
+    color: green;
+    text-align: center;
+    padding: .5em;
+    margin: 1em;
+}
+
+.contact-form {
+    border: 1px solid #ccc;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    margin: .5em;
+}
+
+.contact-form label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.contact-form input {
+    padding: 5px 15px;
+    margin: 1em;
+    width: 100%;
+}
+
+.contact-form textarea {
+    margin: 1em;
+    width: 100%;
+}
+
+.contact-form button {
+    padding: 5px 15px;
+
+}
+/* Media Queries */
+@media only screen and (max-width: 800px) {
+    .subheading-gray, .subheading-w {
+        font-size: 1em;
+    }
+
+    .content-heading, .content-heading-w {
+        font-size: .9em;
+    }
+
+    .content-text {
+        word-break: break-all;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .content-box {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .content {
+        margin-left: 0px;
+    }
+
+    .content-box i {
+        font-size: 1.5em;
+    }
+
+    .content-heading {
+        margin-top: .5em;
+        text-align: center;
+    }
+
+    .content-heading-w {
+        text-align: left;
+    }
+
+    .name {
+        font-size: 2em;
+    }
+
+    .title {
+        font-size: .8em;
+    }
+
+    .img-box img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .footer img {
+        height: 20px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .content-box i {
+        display: none;
+    }
+
+    .img-box {
+        padding: .5em;
+    }
+
+    .img-box img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .subheading-gray, .subheading-w {
+        font-size: .8em;
+    }
+
+    .name-box {
+        padding: .5em .5em 0 .5em;
+    }
+
+    .content-w {
+        padding: .5em;
+    }
+
+    .logos a {
+        margin-left: .5em;
+        margin-bottom: .5em;
+    }
+
+    .subheading-w, .subheading-gray {
+        margin-left: .5em;
+        padding: .5em;
+    }
+}

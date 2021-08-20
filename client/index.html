@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Font -->
+
+    <title>Resume</title>
+</head>
+<body>
+    <div class="container">
+        <div class="gray">
+            <div class="img-box">
+                <img src="./profile.JPG" alt="profile image">
+            </div>
+            <div class="info-box">
+                <h3 class="subheading-gray">INFO</h3>
+                <div class="content-box">
+                    <i class="fas fa-user-alt"></i>
+                    <div class="content">
+                        <p class="content-heading">Name</p>
+                        <p class="content-text">Tammy Batubo</p>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="content">
+                        <p class="content-heading">Address</p>
+                        <p class="content-text">43 Otogbo avenue, Rumuigbo</p>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="content">
+                        <p class="content-heading">Phone</p>
+                        <a href="tel: +2347081282657" class="content-text">+2347081282657</a>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <i class="fas fa-envelope"></i>
+                    <div class="content">
+                        <p class="content-heading">Email</p>
+                        <a href="mailto:tammy.batubo@gmail.com" class="content-text">tammy.batubo@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-box">
+                <h3 class="subheading-gray">SOCIALS</h3>
+                <div class="content-box">
+                    <i class="fab fa-twitter"></i>
+                    <div class="content">
+                        <p class="content-heading">Twitter</p>
+                        <p class="content-text">@dev_TamB</p>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <i class="fab fa-linkedin-in"></i>
+                    <div class="content">
+                        <p class="content-heading">LinkedIn</p>
+                        <a href="https://www.linkedin.com/in/tammy-batubo-4023b6119/" target="_blank" class="content-text">linkedin.com/in/tammy-batubo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ref-box"></div>
+        </div>
+        <div class="white">
+            <div class="name-box">
+                <h1 class="name">TAMMY BATUBO</h1>
+                <p class="title">SOFTWARE ENGINEER</p>
+            </div>
+
+            <div class="content-w">
+                <h3 class="subheading subheading-w">WORK EXPERIENCE</h3>
+                <div class="content-box content-box-w">
+                    <p class="year">2020-2021</p>
+                    <div class="content">
+                        <p class="content-heading content-heading-w">Neu</p>
+                        <p class="content-sub">Software Engineer</p>
+                        <ul class="content-desc">
+                            <li>Designs and creates software solutions to solve pain points for various clients</li>
+                            <li>Checks feasibility of software prototypes</li>
+                            <li>Developed and implemented software solutions based on client requirements</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-box content-box-w">
+                    <p class="year">2019-2020</p>
+                    <div class="content">
+                        <p class="content-heading content-heading-w">Olla IPS</p>
+                        <p class="content-sub">UI Engineer</p>
+                        <ul class="content-desc">
+                            <li>Modifies code to fix errors</li>
+                            <li>Tested and refined software prior to rollout</li>
+                            <li>Released ad hoc product patches</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-w">
+                <h3 class="subheading subheading-w">EDUCATION</h3>
+                <div class="content-box content-box-w">
+                    <p class="year">2019-2020</p>
+                    <div class="content">
+                        <p class="content-heading content-heading-w">Zero-To-Mastery Academy</p>
+                        <p class="content-sub">Front End Development</p>
+                    </div>
+                </div>
+                <div class="content-box content-box-w">
+                    <p class="year">2012-2018</p>
+                    <div class="content">
+                        <p class="content-heading content-heading-w">University Of Debrecen, Hungary</p>
+                        <p class="content-sub">MBBS</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-w">
+                <h3 class="subheading subheading-w">SKILLS</h3>
+                <div class="skills">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS, SCSS</li>
+                        <li>JAVASCRIPT, TYPESCRIPT</li>
+                        <li>REACT, REDUX</li>
+                        <li>NODE, EXPRESS</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dynamic">
+        <div id='response'></div>
+        <h3>Contact Me</h3>
+        <form class='contact-form' id="contact-form">
+            <label>
+                Name
+                <input type="text" id="form-name" required>
+            </label>
+            <label>
+                Email
+                <input type="email" id="form-email" required>
+            </label>
+            <label>
+                Comment
+                <textarea placeholder="comment" id="form-comment" required>
+                </textarea>
+            </label>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+    <footer class="footer">
+        <span>Powered by </span>
+        <div class="logos">
+            <a href="https://internship.zuri.team" target="_blank">
+                <img src="./zuri.svg" alt="HNG">
+            </a>
+            <a href="https://hotels.ng" target="_blank">
+                <img src="./hng.png" alt="HNG">
+            </a>
+            <a href="https://ingressive.org/" target="_blank">
+                <img src="./i4g.png" alt="HNG">
+            </a>
+        </div>
+
+    </footer>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
