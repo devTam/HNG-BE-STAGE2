@@ -1,5 +1,5 @@
 import express from "express";
-import nodemailer from "nodemailer";
+const nodemailer =require("nodemailer")
 import SMTPTransport from "nodemailer/lib/smtp-transport";
 
 const app = express();
