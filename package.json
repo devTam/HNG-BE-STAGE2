@@ -7,7 +7,8 @@
     "start": "tsc && node ./public/index.js",
     "dev": "nodemon ./src/index.ts",
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "tsc": "./node_modules/typescript/bin/tsc",
+    "postinstall": "npm run build"
   },
   "keywords": [],
   "author": "Tammy Batubo",
