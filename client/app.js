@@ -25,7 +25,6 @@ form.addEventListener('submit', async (e) => {
 
         const result = await data.json();
 
-        submit.disabled = true;
         response.innerText = result;
 
         // setTimeout(() => {
