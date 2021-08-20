@@ -1,6 +1,5 @@
-import express from "express";
+const express = require("express");
 const nodemailer =require("nodemailer")
-import SMTPTransport from "nodemailer/lib/smtp-transport";
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -30,7 +29,7 @@ app.post("/", (req, res) => {
         text: comment
     }
 
-    transporter.sendMail(mailOptions, (err: Error | null, info: SMTPTransport.SentMessageInfo) => {
+    transporter.sendMail(mailOptions, (err, info) => {
         if(err) {
             console.log(err)
             res.json('Oops failed to send, Please try again')

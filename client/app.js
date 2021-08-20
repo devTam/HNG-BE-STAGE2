@@ -3,7 +3,6 @@ const email = document.getElementById('form-email')
 const comment = document.getElementById('form-comment')
 const submit = document.getElementById('submit')
 const form = document.getElementById('contact-form');
-const response = document.getElementById('response');
 
 form.addEventListener('submit', async (e) => {
     e.preventDefault()
@@ -25,7 +24,7 @@ form.addEventListener('submit', async (e) => {
 
         const result = await data.json();
 
-        response.innerText = result;
+        alert(result);
 
         // setTimeout(() => {
         //     submit.disabled = false;
